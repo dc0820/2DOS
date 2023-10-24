@@ -4,7 +4,7 @@ import Wordle from '../wordle/Wordle';
 
 export interface DanordleAppProps extends WindowAppProps {}
 
-const DanordleApp: React.FC<HenordleAppProps> = (props) => {
+const DanordleApp: React.FC<DanordleAppProps> = (props) => {
     return (
         <Window
             top={20}
