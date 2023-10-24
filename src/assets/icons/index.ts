@@ -8,7 +8,7 @@ import computerSmall from './computerSmall.png';
 import myComputer from './myComputer.png';
 import showcaseIcon from './showcaseIcon.png';
 import doomIcon from './doomIcon.png';
-import henordleIcon from './danordleIcon.png';
+import danordleIcon from './danordleIcon.png';
 import credits from './credits.png';
 import volumeOn from './volumeOn.png';
 import volumeOff from './volumeOff.png';
