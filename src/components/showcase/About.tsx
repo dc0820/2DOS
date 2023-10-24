@@ -112,7 +112,7 @@ const About: React.FC<AboutProps> = (props) => {
                         target="_blank"
                         href="https://twitter.com/danielwaynecook"
                     >
-                        @Danielcook
+                        @danielwaynecook
                     </a>{' '}
                     Good luck and have fun!
                 </p>
