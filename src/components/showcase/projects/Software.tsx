@@ -35,7 +35,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     interactive portfolio to aid my job search. I eventually got
                     the idea for this site around early April and began
                     development early May. It is created a fully interactive Operating System 
-                    website with React and Nextjs as a portfolio
+                    website with React and Nextjs as a portfolio.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -94,7 +94,6 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     outrageous of weapons through attaching as many attachments
                     on your weapon as you can. The game ceased development in
                     2019 because I unfortunately was packed in school.
-                    
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -132,14 +131,11 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     changes, however, a link to the game will be added here.
                 </p>
             </div>
-                </div>
-            </div> {/* This closes the text-block div */}
             
             <div>
                 <ResumeDownload />
             </div>
-
-        </div> {/* This closes the site-page-content div */}
+        </div> // This was the missing closing div tag
     );
 };
 
