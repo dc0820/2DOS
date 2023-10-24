@@ -72,14 +72,10 @@ const About: React.FC<AboutProps> = (props) => {
                 </p>
                 <br />
                 <p>
-                    In 2017, I got accepted into Rennselear Polytechnic
-                    Institute to study Computer Science. It was my first choice
+                    In 2020, I got accepted into The University of Texas at 
+                    San Antonio to study Cyber Security. It was my first choice
                     and I was absolutely ecstatic to be going to such a great
-                    university. At the end of my sophomore year, I got an
-                    internship working for the startup Hover, primarily focusing
-                    on frontend work. I continued to work at Hover on and off
-                    for about a year and a half, until the start of my senior
-                    year when I decided to focus on other opportunities.
+                    university.
                 </p>
                 <br />
                 <br />
@@ -133,9 +129,9 @@ const About: React.FC<AboutProps> = (props) => {
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://twitter.com/henryheffernan"
+                        href="https://twitter.com/danielwaynecook"
                     >
-                        @henryheffernan
+                        @Danielcook
                     </a>{' '}
                     Good luck and have fun!
                 </p>
@@ -145,8 +141,8 @@ const About: React.FC<AboutProps> = (props) => {
                     them. You can reach me through the{' '}
                     <Link to="/contact">contact page</Link> or shoot me an email
                     at{' '}
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:danielwcook5@gmail.com">
+                        danielwcook5@gmail.com
                     </a>
                 </p>
             </div>
@@ -182,3 +178,4 @@ const styles: StyleSheetCSS = {
 };
 
 export default About;
+
