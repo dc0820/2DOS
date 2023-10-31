@@ -5,7 +5,7 @@ import Doom from '../applications/Doom';
 import OregonTrail from '../applications/OregonTrail';
 import ShutdownSequence from './ShutdownSequence';
 // import ThisComputer from '../applications/ThisComputer';
-import Danordle from '../applications/danordle';
+import Danordle from '../applications/Danordle';
 import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
 import Scrabble from '../applications/Scrabble';
@@ -70,9 +70,7 @@ const APPLICATIONS: {
 
 const Desktop: React.FC<DesktopProps> = (props) => {
     const [windows, setWindows] = useState<DesktopWindows>({});
-
     const [shortcuts, setShortcuts] = useState<DesktopShortcutProps[]>([]);
-
     const [shutdown, setShutdown] = useState(false);
     const [numShutdowns, setNumShutdowns] = useState(1);
 
@@ -216,37 +214,24 @@ const Desktop: React.FC<DesktopProps> = (props) => {
                             windows[key].minimized && styles.minimized
                         )}
                     >
-                        {React.cloneElement(element, {
-                            key,
-                            onInteract: () => onWindowInteract(key),
-                            onClose: () => removeWindow(key),
-                        })}
+                        {element}
                     </div>
                 );
             })}
-            <div style={styles.shortcuts}>
-                {shortcuts.map((shortcut, i) => {
-                    return (
-                        <div
-                            style={Object.assign({}, styles.shortcutContainer, {
-                                top: i * 104,
-                            })}
-                            key={shortcut.shortcutName}
-                        >
-                            <DesktopShortcut
-                                icon={shortcut.icon}
-                                shortcutName={shortcut.shortcutName}
-                                onOpen={shortcut.onOpen}
-                            />
-                        </div>
-                    );
-                })}
-            </div>
-            <Toolbar
-                windows={windows}
-                toggleMinimize={toggleMinimize}
-                shutdown={startShutdown}
-            />
+
+            {shortcuts.map((shortcut, idx) => (
+                <DesktopShortcut
+                    key={idx}
+                    onOpen={shortcut.onOpen}
+                    icon={shortcut.icon}
+                    shortcutName={shortcut.shortcutName}
+                />
+            ))}
+            
+            {/* Adding the text "Daniel Cook Portfolio" */}
+            <div style={styles.portfolioText}>Daniel Cook Portfolio</div>
+
+            <Toolbar onShutdown={startShutdown} />
         </div>
     ) : (
         <ShutdownSequence
@@ -258,27 +243,25 @@ const Desktop: React.FC<DesktopProps> = (props) => {
 
 const styles: StyleSheetCSS = {
     desktop: {
-        minHeight: '100%',
-        flex: 1,
-        backgroundColor: Colors.turquoise,
-    },
-    shutdown: {
-        minHeight: '100%',
-        flex: 1,
-        backgroundColor: '#1d2e2f',
-    },
-    shortcutContainer: {
-        position: 'absolute',
-    },
-    shortcuts: {
-        position: 'absolute',
-        top: 16,
-        left: 6,
+        background: Colors.turquoise, // Set the turquoise background color here
+        width: '100vw',
+        height: '100vh',
+        overflow: 'hidden',
+        position: 'relative',
     },
     minimized: {
-        pointerEvents: 'none',
-        opacity: 0,
+        display: 'none',
+    },
+    // Style for the portfolio text
+    portfolioText: {
+        position: 'absolute',
+        bottom: 20, // adjust as needed
+        left: '50%',
+        transform: 'translateX(-50%)',
+        color: 'white', // or any color you prefer
+        fontSize: '1.5em', // adjust as needed
     },
 };
+
 
 export default Desktop;
