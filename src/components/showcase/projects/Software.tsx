@@ -131,6 +131,29 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     changes, however, a link to the game will be added here.
                 </p>
             </div>
+            <div className="text-block">
+                <h2>Guntattchment Saga The Sequel</h2>
+                <br />
+                <p>
+                    Guntattchment Saga or GSTS is a wave based top
+                    down shooter where you progress by building the most
+                    outrageous of weapons through attaching as many attachments
+                    on your weapon as you can. The game ceased development in
+                    2019 because I unfortunately was packed in school.
+                </p>
+                <br />
+                <div className="captioned-image">
+                    <VideoAsset src={saga} />
+                    <div style={styles.caption}>
+                        <p>
+                            <sub>
+                                <b>Figure 4: </b> Guntattchment Saga Gameplay
+                                demo, featuring the main character along with a
+                                few of our grunt and dasher enemies.
+                            </sub>
+                        </p>
+                    </div>
+                </div>
                 <ResumeDownload />
         </div>
     );
