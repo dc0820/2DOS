@@ -70,7 +70,9 @@ const APPLICATIONS: {
 
 const Desktop: React.FC<DesktopProps> = (props) => {
     const [windows, setWindows] = useState<DesktopWindows>({});
+
     const [shortcuts, setShortcuts] = useState<DesktopShortcutProps[]>([]);
+
     const [shutdown, setShutdown] = useState(false);
     const [numShutdowns, setNumShutdowns] = useState(1);
 
@@ -214,24 +216,37 @@ const Desktop: React.FC<DesktopProps> = (props) => {
                             windows[key].minimized && styles.minimized
                         )}
                     >
-                        {element}
+                        {React.cloneElement(element, {
+                            key,
+                            onInteract: () => onWindowInteract(key),
+                            onClose: () => removeWindow(key),
+                        })}
                     </div>
                 );
             })}
-
-            {shortcuts.map((shortcut, idx) => (
-                <DesktopShortcut
-                    key={idx}
-                    onOpen={shortcut.onOpen}
-                    icon={shortcut.icon}
-                    shortcutName={shortcut.shortcutName}
-                />
-            ))}
-            
-            {/* Adding the text "Daniel Cook Portfolio" */}
-            <div style={styles.portfolioText}>Daniel Cook Portfolio</div>
-
-            <Toolbar onShutdown={startShutdown} />
+            <div style={styles.shortcuts}>
+                {shortcuts.map((shortcut, i) => {
+                    return (
+                        <div
+                            style={Object.assign({}, styles.shortcutContainer, {
+                                top: i * 104,
+                            })}
+                            key={shortcut.shortcutName}
+                        >
+                            <DesktopShortcut
+                                icon={shortcut.icon}
+                                shortcutName={shortcut.shortcutName}
+                                onOpen={shortcut.onOpen}
+                            />
+                        </div>
+                    );
+                })}
+            </div>
+            <Toolbar
+                windows={windows}
+                toggleMinimize={toggleMinimize}
+                shutdown={startShutdown}
+            />
         </div>
     ) : (
         <ShutdownSequence
@@ -240,19 +255,12 @@ const Desktop: React.FC<DesktopProps> = (props) => {
         />
     );
 };
+
 const styles: StyleSheetCSS = {
     desktop: {
         minHeight: '100%',
         flex: 1,
         backgroundColor: Colors.turquoise,
-    },
-     portfolioText: {
-        position: 'absolute',
-        bottom: 20, // adjust as needed
-        left: '50%',
-        transform: 'translateX(-50%)',
-        color: 'white', // or any color you prefer
-        fontSize: '1.5em', // adjust as needed
     },
     shutdown: {
         minHeight: '100%',
@@ -274,3 +282,4 @@ const styles: StyleSheetCSS = {
 };
 
 export default Desktop;
+
