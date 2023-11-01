@@ -48,7 +48,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     </p>
                 </div>
 
-                <h2>danielcookthreejs.org</h2>
+                <h2>danielcookjs.org</h2>
                 <br />
                 <p>
                     danielcookthreejs.org is my second portfolio website that focuses more on threejs. 
