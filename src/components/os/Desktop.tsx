@@ -282,4 +282,3 @@ const styles: StyleSheetCSS = {
 };
 
 export default Desktop;
-
