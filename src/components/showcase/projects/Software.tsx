@@ -7,7 +7,7 @@ import computer from '../../../assets/pictures/projects/software/computer.mp4';
 import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
 // @ts-ignore
 import websiteOS from '../../../assets/pictures/projects/software/websiteOS.mp4';
-import Scanner from '../../assets/pictures/Scanner.jpg'
+import Scanner from '../../assets/pictures/Scanner'
 import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
 
