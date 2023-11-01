@@ -132,14 +132,12 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </p>
             </div>
             <div className="text-block">
-                <h2>Guntattchment Saga The Sequel</h2>
+                <h2>Web Scanner</h2>
                 <br />
                 <p>
-                    Guntattchment Saga or GSTS is a wave based top
-                    down shooter where you progress by building the most
-                    outrageous of weapons through attaching as many attachments
-                    on your weapon as you can. The game ceased development in
-                    2019 because I unfortunately was packed in school.
+                    This web vulnerability scanner, web_scanner.py, is a Python-based tool that I created. 
+                    It aims to help you identify common vulnerable endpoints and misconfigurations on your website by scanning for well-known paths. 
+                    Remember always to test only on platforms you have permission to scan to avoid legal consequences.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -147,9 +145,8 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <div style={styles.caption}>
                         <p>
                             <sub>
-                                <b>Figure 4: </b> Guntattchment Saga Gameplay
-                                demo, featuring the main character along with a
-                                few of our grunt and dasher enemies.
+                                <b>Figure 4: </b> The tool tests a set of predefined paths 
+                                that are commonly known to have vulnerabilities or expose sensitive information.
                             </sub>
                         </p>
                     </div>
