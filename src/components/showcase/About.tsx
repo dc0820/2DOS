@@ -110,9 +110,9 @@ const About: React.FC<AboutProps> = (props) => {
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://twitter.com/danielwaynecook"
+                        href="https://twitter.com/d_wayne_c"
                     >
-                        @danielwaynecook
+                        @d_wayne_c
                     </a>{' '}
                     Good luck and have fun!
                 </p>
