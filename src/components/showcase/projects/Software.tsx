@@ -132,14 +132,14 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     changes, however, a link to the game will be added here.
                 </p>
             </div>
-            div className="scanner-image">
+              <div className="scanner-image"> 
                 <img src={Scanner} alt="Web Scanner" style={styles.image} />
                 <p style={styles.caption}>
                     <sub>
                         <b>Figure X:</b> This is my web scanner GUI.
                     </sub>
                 </p>
-            </div> 
+            </div>
             
             <div>
                 <ResumeDownload />
