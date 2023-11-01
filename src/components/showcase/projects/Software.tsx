@@ -7,7 +7,7 @@ import computer from '../../../assets/pictures/projects/software/computer.mp4';
 import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
 // @ts-ignore
 import websiteOS from '../../../assets/pictures/projects/software/websiteOS.mp4';
-import Scanner from '../../assets/pictures/Scanner';
+import WebScanner from '../../assets/pictures/WebScanner';
 import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
 
@@ -132,8 +132,8 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     changes, however, a link to the game will be added here.
                 </p>
             </div>
-              <div className="scanner-image"> 
-                <img src={Scanner} alt="Web Scanner" style={styles.image} />
+              <div className="captioned-image"> 
+                <img src={WebScanner} alt="Web Scanner" style={styles.image} />
                 <p style={styles.caption}>
                     <sub>
                         <b>Figure X:</b> This is my web scanner GUI.
