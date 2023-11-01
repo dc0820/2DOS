@@ -156,6 +156,10 @@ const styles: StyleSheetCSS = {
     caption: {
         width: '80%',
     },
+    image: {
+        width: '100%',
+        padding: 12,
+    }
 };
 
 export default SoftwareProjects;
