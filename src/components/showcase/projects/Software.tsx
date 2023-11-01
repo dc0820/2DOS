@@ -147,4 +147,3 @@ const styles: StyleSheetCSS = {
 };
 
 export default SoftwareProjects;
-
