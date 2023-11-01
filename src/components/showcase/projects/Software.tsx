@@ -29,13 +29,13 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 <h2>danielcook.org</h2>
                 <br />
                 <p>
-                    danielcook.org is my portfolio website. The project was an absolute
-                    joy to make and challenged me both technically and
+                    danielcook.org is my portfolio website. The project was a absolute
+                    challenge to make in both technically and
                     creatively. Early in 2023, I knew I wanted to make an
                     interactive portfolio to aid my job search. I eventually got
                     the idea for this site around early April and began
                     development early May. It is created a fully interactive Operating System 
-                    website with React and Nextjs as a portfolio.
+                    website with React, Nextjs, typescript & styled-components frameworks.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -54,8 +54,8 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     danielcookthreejs.org is my second portfolio website that focuses more on threejs. 
                     The project was an absolute
                     joy to make and challenged me both technically and
-                    creatively. Early in 2023, I knew I wanted to make an
-                    interactive portfolio to aid my job search. I eventually got
+                    creatively. Early in 2023, I also wanted to make an
+                    interactive portfolio to aid my job search and revolve around my work. I eventually got
                     the idea for this site around early June and began
                     development early August. Using a scene enviornment of a 3D scene that 
                     is fully interactable to showcase of this website.
