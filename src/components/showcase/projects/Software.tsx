@@ -133,7 +133,6 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             </div>
                 <ResumeDownload />
             </div>
-        </div> // This was the missing closing div tag
     );
 };
 
