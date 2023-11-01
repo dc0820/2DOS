@@ -6,7 +6,10 @@ import computer from '../../../assets/pictures/projects/software/computer.mp4';
 // @ts-ignore
 import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
 // @ts-ignore
+import WebScannerGUI from '../../../assets/pictures/projects/software/WebScannerGUI.mp4';
+// @ts-ignore
 import websiteOS from '../../../assets/pictures/projects/software/websiteOS.mp4';
+// @ts-ignore
 import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
 
