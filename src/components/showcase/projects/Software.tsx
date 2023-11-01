@@ -7,7 +7,8 @@ import computer from '../../../assets/pictures/projects/software/computer.mp4';
 import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
 // @ts-ignore
 import websiteOS from '../../../assets/pictures/projects/software/websiteOS.mp4';
-import WebScanner from '../../assets/pictures/WebScanner';
+// Corrected the import path and added the file extension for WebScanner
+import WebScanner from '../../../assets/pictures/WebScanner.png';
 import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
 
@@ -30,13 +31,13 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 <h2>danielcook.org</h2>
                 <br />
                 <p>
-                    danielcook.org is my portfolio website. The project was a absolute
+                    danielcook.org is my portfolio website. The project was an absolute
                     challenge to make in both technically and
                     creatively. Early in 2023, I knew I wanted to make an
                     interactive portfolio to aid my job search. I eventually got
                     the idea for this site around early April and began
                     development early May. It is created a fully interactive Operating System 
-                    website with React, Nextjs, typescript & styled-components frameworks.
+                    website with React, Nextjs, TypeScript, and styled-components frameworks.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -49,17 +50,17 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     </p>
                 </div>
 
-                <h2>danielcookjs.org</h2>
+                <h2>danielcookthreejs.org</h2>
                 <br />
                 <p>
-                    danielcookthreejs.org is my second portfolio website that focuses more on threejs. 
+                    danielcookthreejs.org is my second portfolio website that focuses more on Three.js. 
                     The project was an absolute
                     joy to make and challenged me both technically and
                     creatively. Early in 2023, I also wanted to make an
                     interactive portfolio to aid my job search and revolve around my work. I eventually got
                     the idea for this site around early June and began
-                    development early August. Using a scene enviornment of a 3D scene that 
-                    is fully interactable to showcase of this website.
+                    development early August. Using a scene environment of a 3D scene that 
+                    is fully interactable to showcase this website.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -74,7 +75,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </div>
                 <p>
                     I'm skipping over a lot of details in exchange for brevity,
-                    but I do plan on doing a more in depth breakdown for those
+                    but I do plan on doing a more in-depth breakdown for those
                     interested sometime in the future. To get updates with that
                     project feel free to follow me on twitter{' '}
                     <a
@@ -90,7 +91,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 <h2>Guntattchment Saga The Sequel</h2>
                 <br />
                 <p>
-                    Guntattchment Saga or GSTS is a wave based top
+                    Guntattchment Saga or GSTS is a wave-based top
                     down shooter where you progress by building the most
                     outrageous of weapons through attaching as many attachments
                     on your weapon as you can. The game ceased development in
@@ -132,7 +133,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     changes, however, a link to the game will be added here.
                 </p>
             </div>
-              <div className="captioned-image"> 
+            <div className="captioned-image"> 
                 <img src={WebScanner} alt="Web Scanner" style={styles.image} />
                 <p style={styles.caption}>
                     <sub>
@@ -144,11 +145,11 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <div>
                 <ResumeDownload />
             </div>
-        </div> // This was the missing closing div tag
+        </div> // Corrected the comment placement
     );
 };
 
-const styles: StyleSheetCSS = {
+const styles: { [key: string]: React.CSSProperties } = { // Updated to use React.CSSProperties
     video: {
         width: '100%',
         padding: 12,
