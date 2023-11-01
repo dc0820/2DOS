@@ -132,7 +132,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </p>
             </div>
                 <ResumeDownload />
-            </div>
+        </div>
     );
 };
 
