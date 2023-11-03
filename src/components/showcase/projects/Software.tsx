@@ -50,10 +50,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     </p>
                 </div>
 
-                <h2>danielcookthreejs.org</h2>
+                <h2>danielcookjs.org</h2>
                 <br />
                 <p>
-                    danielcookthreejs.org is my second portfolio website that focuses more on threejs. 
+                    danielcookjs.org is my second portfolio website that focuses more on threejs. 
                     The project was an absolute
                     joy to make and challenged me both technically and
                     creatively. Early in 2023, I knew I wanted to make an
