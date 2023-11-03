@@ -151,8 +151,9 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                                 <b>Figure 4: </b> The tool tests a set of predefined paths 
                                 that are commonly known to have vulnerabilities or expose sensitive information.
                             </sub>
-                        </p>
-                    </div>
+                         </p>
+                     </div>
+                  </div>
                 </div>
                 <ResumeDownload />
         </div>
