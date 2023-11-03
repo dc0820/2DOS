@@ -157,7 +157,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </div>
                 <ResumeDownload />
         </div>
-    );
+    ),
 };
 
 const styles: StyleSheetCSS = {
