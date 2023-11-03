@@ -9,7 +9,6 @@ import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
 import guiSCAN from '../../../assets/pictures/projects/software/guiSCAN.mp4';
 // @ts-ignore
 import websiteOS from '../../../assets/pictures/projects/software/websiteOS.mp4';
-// @ts-ignore
 import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
 
@@ -145,21 +144,22 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 <br />
                 <div className="captioned-image">
                     <VideoAsset src={guiSCAN} />
-                    <div style={styles.caption}>
-                        <p>
-                            <sub>
-                                <b>Figure 4: </b> The tool tests a set of predefined paths 
-                                that are commonly known to have vulnerabilities or expose sensitive information.
-                            </sub>
-                        </p>
-                    </div>
-                </div>         
+                    <p style={styles.caption}>
+                        <sub>
+                            <b>Figure 4:</b> A demonstration of the web vulnerability scanner in action.
+                        </sub>
+                    </p>
+                </div>
+            </div>
+
+            <div>
                 <ResumeDownload />
+            </div>
         </div>
     );
 };
 
-const styles = {
+const styles: StyleSheetCSS = {
     video: {
         width: '100%',
         padding: 12,
