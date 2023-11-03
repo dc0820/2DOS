@@ -146,7 +146,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <VideoAsset src={guiSCAN} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 4:</b> A demonstration of the web vulnerability scanner in action.
+                            <b>Figure 4:</b> A demonstration of the web vulnerability scanner in action. (Don't worry I own this site that I gave my girlfriend)
                         </sub>
                     </p>
                 </div>
