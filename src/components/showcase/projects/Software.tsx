@@ -152,12 +152,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                                 that are commonly known to have vulnerabilities or expose sensitive information.
                             </sub>
                          </p>
-                     </div>
-                  </div>
                 </div>
                 <ResumeDownload />
         </div>
-    ),
+    );
 };
 
 const styles: StyleSheetCSS = {
