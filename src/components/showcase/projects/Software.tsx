@@ -159,7 +159,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
     );
 };
 
-const styles: StyleSheetCSS = {
+const styles = {
     video: {
         width: '100%',
         padding: 12,
