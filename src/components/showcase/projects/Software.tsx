@@ -136,24 +136,25 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             </div>
             <div className="text-block">
                 <h2>Web Scanner</h2>
-                <br />
-                <p>
-                    This web vulnerability scanner, web_scanner.py, is a Python-based tool that I created. 
-                    It aims to help you identify common vulnerable endpoints and misconfigurations on your website by scanning for well-known paths. 
-                    Remember always to test only on platforms you have permission to scan to avoid legal consequences.
-                </p>
-                <br />
-                <div className="captioned-image">
-                    <VideoAsset src={guiSCAN} />
-                    <div style={styles.caption}>
+                    <br />
                         <p>
-                            <sub>
-                                <b>Figure 4: </b> The tool tests a set of predefined paths 
-                                that are commonly known to have vulnerabilities or expose sensitive information.
-                            </sub>
-                         </p>
-                </div>
-                <ResumeDownload />
+                            This web vulnerability scanner, web_scanner.py, is a Python-based tool that I created. 
+                            It aims to help you identify common vulnerable endpoints and misconfigurations on your website by scanning for well-known paths. 
+                            Remember always to test only on platforms you have permission to scan to avoid legal consequences.
+                        </p>
+                    <br />
+                        <div className="captioned-image">
+                        <VideoAsset src={guiSCAN} />
+                        <div style={styles.caption}>
+                            <p>
+                                <sub>
+                                    <b>Figure 4: </b> The tool tests a set of predefined paths 
+                                    that are commonly known to have vulnerabilities or expose sensitive information.
+                                </sub>
+                             </p>
+                        </div>
+                   </div>         
+                    <ResumeDownload />
         </div>
     );
 };
