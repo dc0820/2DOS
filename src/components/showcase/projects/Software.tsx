@@ -144,7 +144,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={saga} />
+                    <VideoAsset src={WebScannerGUI} />
                     <div style={styles.caption}>
                         <p>
                             <sub>
