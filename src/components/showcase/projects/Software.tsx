@@ -6,7 +6,7 @@ import computer from '../../../assets/pictures/projects/software/computer.mp4';
 // @ts-ignore
 import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
 // @ts-ignore
-import WebScannerGUI from '../../../assets/pictures/projects/software/WebScannerGUI.mp4';
+import guiSCAN from '../../../assets/pictures/projects/software/guiSCAN.mp4';
 // @ts-ignore
 import websiteOS from '../../../assets/pictures/projects/software/websiteOS.mp4';
 // @ts-ignore
@@ -144,7 +144,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={WebScannerGUI} />
+                    <VideoAsset src={guiSCAN} />
                     <div style={styles.caption}>
                         <p>
                             <sub>
