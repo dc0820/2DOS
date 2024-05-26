@@ -51,7 +51,7 @@ const Contact: React.FC<ContactProps> = (props) => {
     const handleSubmit = useCallback(() => {
         if (isFormValid) {
             setIsLoading(true);
-            fetch('https://henryheffernan.com/api/send-email', {
+            fetch('https://danielcookjs.org/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
